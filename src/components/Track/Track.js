@@ -11,12 +11,12 @@ class Track extends Component {
 
   render() {
     return (
-      <div class="track">
-        <div class="track-information">
+      <div className="track">
+        <div className="track-information">
           <h3>Track name will go here</h3>
           <p>Track artist will go here | track album will go here</p>
         </div>
-        <button class="track-action">+ or - will go here</button>
+        <button className="track-action">+ or - will go here</button>
       </div>
     );
   }
