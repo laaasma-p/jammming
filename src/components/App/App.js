@@ -1,5 +1,8 @@
 import "./App.css";
 import { Component } from "react";
+import SearchBar from "../SearchBar/SearchBar";
+import SearchResults from "../SearchResults/SearchResults";
+import Playlist from "../Playlist/Playlist";
 
 class App extends Component {
   render() {
@@ -8,11 +11,11 @@ class App extends Component {
         <h1>
           Ja<span className="highlight">mmm</span>ing
         </h1>
-        <div>
-          {/* SearchBar goes here */}
+        <div className="app">
+          <SearchBar />
           <div className="app-playlist">
-            {/* SearchResults go here */}
-            {/* Playlist goes here */}
+            <SearchResults />
+            <Playlist />
           </div>
         </div>
       </div>
