@@ -6,11 +6,11 @@ class App extends Component {
     return (
       <div>
         <h1>
-          Ja<span>mmm</span>ing
+          Ja<span className="highlight">mmm</span>ing
         </h1>
         <div>
           {/* SearchBar goes here */}
-          <div>
+          <div className="app-playlist">
             {/* SearchResults go here */}
             {/* Playlist goes here */}
           </div>
