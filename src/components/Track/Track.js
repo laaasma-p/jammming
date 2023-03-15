@@ -2,8 +2,8 @@ import { Component } from "react";
 import "./Track.css";
 
 class Track extends Component {
-  renderAction(isRemoval) {
-    if (isRemoval) {
+  renderAction() {
+    if (this.props.isRemoval) {
       return <button className="track-action">-</button>;
     }
     return <button className="track-action">+</button>;
@@ -13,10 +13,12 @@ class Track extends Component {
     return (
       <div className="track">
         <div className="track-information">
-          <h3>Track name will go here</h3>
-          <p>Track artist will go here | track album will go here</p>
+          <h3>{this.props.track.name}</h3>
+          <p>
+            {this.props.track.artist} | {this.props.track.album}
+          </p>
         </div>
-        <button className="track-action">+ or - will go here</button>
+        {this.renderAction()}
       </div>
     );
   }
