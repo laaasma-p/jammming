@@ -14,6 +14,27 @@ class App extends Component {
         { name: "Name2", artist: "Artist2", album: "Album2", id: 2 },
         { name: "Name3", artist: "Artist3", album: "Album3", id: 3 },
       ],
+      playlistName: "New Playlist",
+      playlistTracks: [
+        {
+          name: "PlaylistName1",
+          artist: "PlaylistArtist1",
+          album: "PlaylistAlbum1",
+          id: 4,
+        },
+        {
+          name: "PlaylistName2",
+          artist: "PlaylistArtist2",
+          album: "PlaylistAlbum2",
+          id: 5,
+        },
+        {
+          name: "PlaylistName3",
+          artist: "PlaylistArtist3",
+          album: "PlaylistAlbum3",
+          id: 6,
+        },
+      ],
     };
   }
 
