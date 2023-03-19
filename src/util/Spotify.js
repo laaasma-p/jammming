@@ -1,11 +1,10 @@
 let accessToken;
-const clientId = process.env.REACT_APP_SPOTIFY_CLIENT_ID; // Insert your own clientId from Spotify when using the application
+const clientId = ""; // Insert your own clientId from Spotify when using the application
 const redirectUri = "http://localhost:3000";
 
 const Spotify = {
   getAccessToken() {
     if (accessToken) {
-      console.log(clientId);
       return accessToken;
     }
 
